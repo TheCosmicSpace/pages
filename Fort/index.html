@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Spectral" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+ 	<link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header" id="header">
+			<div class="container_header">
+				<div class="nav">
+					<a href="#" class="popup_header">
+						<img src="img/Burger.png" alt="FORT FAMILY">
+					</a>
+					<a href="#" class="logo">
+						<img src="img/Logo.png" alt="FORT FAMILY">
+					</a>
+					<p class="header__title dNoneM">Франшиза площадок для проведения праздников в формате квест-шоу</p>
+					<div class="city dNoneM">
+						<p class="city__title">Ваш город<br><a href="" class="select__city">Москва</a></p>
+					</div>
+					<div class="contacts_header">
+						<div class="con_menu dNoneM">
+						<ul class="menu">
+							<li class="menu__item">
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+							</li>
+							<li class="menu__item">
+								<a href="#"><i class="fab fa-viber"></i></a>
+							</li>
+							<li class="menu__item">
+								<a href="#"><i class="fab fa-telegram-plane"></i></a>
+							</li>
+						</ul>
+						<p class="con_menu_title">Ответим за 5 минут</p>
+						</div>
+						<div class="phone">
+							<p class="phone__number">
+							+7 (499) 490-75-29 <br><a href="#popup_bell" class="phone__title popup-link_bell">Заказать звонок</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="container">	
+			<div class="row">
+				<div class="col-12 col-xl-8">
+					<div class="contant">
+						<h1>Начните получать прибыль уже через 2 недели и выйдите на доход до 3 000 000 в месяц</h1>
+						<p class="contant__title">на организации праздников в <br class="dNone"> формате квест-шоу</p>
+						<p class="contant__mini__title">Мы создали уникальные франшизы, которые не только <br class="dNoneM">приносят большие деньги, но и становятся любимым делом</p>
+				
+						<p class="contant__form__title">Подберите франшизу и получите презентацию со всеми<br> финансовыми показателями</p>
+						<a href="#presaScreenID" class="all_btn form_btn">Подобрать франшизу</a>
+						<img src="img/lgcompstscreen_XS.png" alt="" class="dNone">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- SCREEN TWO -->
+	 <section class="ScreenTwo">
+				<div class="container">
+		<div class="titleScreenTwo">
+			<div class="row">
+				<div class="col-10 m-auto">		
+					<h1>Подберите франшизу с концепцией, которая подойдет именно вам</h1>
+					<p>и мы пришлем вам презентацию с финансовыми показателями</p>
+				</div>
+			</div>
+		</div>
+	
+		<div class="presaScreenTwo" id="presaScreenID">
+			<div class="row justify-content-center">
+				<div class="presaScreenTwo__title" >
+					<div class="col-xl-3 col-12">
+						<img src="img/presa.png" class="presaScreen_img" alt="">
+					</div>
+					<div class="col-xl-6 col-12 presa_title">
+						<h3>Ответьте на несколько вопросов, и мы подготовим для вас бизнес-план</h3>
+						<p>Вы узнаете стоимость подходящей франшизы, сроки окупаемости инвестиций и свою возможную прибыль</p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row dNoneM">
+				<div class="col-lg-9">
+					<div class="questions">
+						<div id="Progress">
+							<div id="Bar">
+								<div id="label">Вопрос 1 из 4</div>
+							</div>
+						</div>
+						<div id="changQuestOne">
+							<h2 class="changQuestOne_title">В каком городе вы находитесь?</h2>
+							<select name="" id="SelectCity" onchange="SelectCity()">
+									<option value="">Москва</option>
+									<option value="">Питер</option>
+							</select>
+							<a class="all_btn" onclick="Move()">Далее</a>
+							<textarea name="" id="" cols="64" rows="10" placeholder="Текст..." style="margin-top: 20px; max-width: 674px"></textarea>
+						</div>
+	
+						<div id="changQuestTwo">
+							<h2 class="changQuestTwo_title">Рассматриваете ли вы возможность открытия квеста в другом городе?</h2>
+							<a  class="circle_btn" onclick="Move()">Да</a>
+							<a class="circle_btn" onclick="Move()">Нет</a>
+							<p class="prevQuest" onclick="Back()">Предыдущий вопрос</p>
+						</div>
+	
+						<div id="changQuestThree">
+							<h2 class="changQuestThree_title">Есть ли у вас опыт в организации мероприятий / праздников?</h2>
+							<a  class="circle_btn" onclick="Move()">Да</a>
+							<a class="circle_btn" onclick="Move()">Нет</a>
+							<p class="prevQuest" onclick="Back()">Предыдущий вопрос</p>
+						</div>
+	
+						<div id="changQuestFour">
+							<h2 class="changQuestFour_title">Есть ли у вас готовая база клиентов?</h2>
+							<a  class="circle_btn" onclick="Move()">Да</a>	
+							<a class="circle_btn" onclick="Move()">Нет</a>
+							<p class="prevQuest" onclick="Back()">Предыдущий вопрос</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 ml-auto">
+					<div class="support" id="support">
+						<img src="img/AVA.png" alt="" >
+						<div class="suppotr_title">
+							<h4>Евгений Журавлев</h4>
+							<p>менеджер по развитию франчайзинга</p>
+						</div>
+						<div id="changTextOne">
+							Мы продаем только по одной концепции квестов на город, чтобы у вас не было поблизости похожих конкурентов.
+						</div>
+	
+						<div id="changTextTwo">
+							20% наших франчайзи даже поменяли место проживания, чтобы открыть квест по франшизе и зрабатывать больше.
+						</div>
+	
+						<div id="changTextThree">
+							Укажите — был ли у вас опыт профессиональной организации мероприятий для больших компаний.
+						</div>
+	
+						<div id="changTextFour">
+							При наличии базы поможем запустить продажи квеста еще до подготовки площадки. Если базы нет, расскажем, где найти первых клиентов.
+						</div>
+	
+						<div class="support_footer">
+							<img src="img/mes.png" alt="">
+							<a href="#popup_bell" class="support__title popup-link_bell">Получить консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row dNone">
+				<div class="container">
+					<div class="QuestMob" id="Qnone">
+						<div class="col-12">
+							<div id="ProgressMob">
+									<div id="BarMob">
+										<div id="labelMob">Вопрос 1 из 4</div>
+									</div>
+							</div>
+							<h2 class="changQuestOne_title" id="MobQuestOne">В каком городе вы находитесь?</h2>
+							<h2 class="changQuestOne_title" id="MobQuestTwo">Рассматриваете ли вы возможность открытия квеста в другом городе?</h2>
+							<h2 class="changQuestOne_title" id="MobQuestThree">Есть ли у вас опыт в организации мероприятий / праздников?</h2>
+							<h2 class="changQuestOne_title" id="MobQuestFour">Есть ли у вас готовая база клиентов?</h2>
+							<div class="suppotrMob">
+								<div class="suppotrMob__text" id="MobtextOne">
+									Мы продаем только по одной концепции квестов на город, чтобы у вас не было поблизости похожих конкурентов.
+								</div>
+								<div class="suppotrMob__text" id="MobtextTwo">
+									20% наших франчайзи даже поменяли место проживания, чтобы открыть квест по франшизе и зрабатывать больше.
+								</div>
+								<div class="suppotrMob__text" id="MobtextThree">
+									Укажите — был ли у вас опыт профессиональной организации мероприятий для больших компаний.
+								</div>
+								<div class="suppotrMob__text" id="MobtextFour">
+									При наличии базы поможем запустить продажи квеста еще до подготовки площадки. Если базы нет, расскажем, где найти первых клиентов.
+								</div>
+								<div class="suppotrMob__name" id="sup_name">
+									<p>Евгений Журавлев</p>
+									<p style="opacity: 0.6">менеджер по развитию франчайзинга</p>
+								</div>
+							</div>
+							<div class="changeQuestMobOne" id="MobOtvOne">
+								<select name="" id="SelectCity" onchange="SelectCity()">
+										<option value="">Москва</option>
+										<option value="">Питер</option>
+								</select>
+								<a class="all_btn changQuest_btn" onclick="Move()">Далее</a>
+							</div>
+							<div class="changeQuestMobTwo" id="MobOtvTwo">
+								<a  class="circle_btn" onclick="Move()">Да</a>
+								<a class="circle_btn" onclick="Move()">Нет</a>
+								<p class="prevMod" onclick="Back()">Предыдущий вопрос</p>
+							</div>
+							<div class="changeQuestMobThree" id="MobOtvThree">
+								<a  class="circle_btn" onclick="Move()">Да</a>
+								<a class="circle_btn" onclick="Move()">Нет</a>
+								<p class="prevMod" onclick="Back()">Предыдущий вопрос</p>
+							</div>
+							<div class="changeQuestMobFour" id="MobOtvFour">
+								<a  class="circle_btn" onclick="Move()">Да</a>
+								<a class="circle_btn" onclick="Move()">Нет</a>
+								<p class="prevMod" onclick="Back()">Предыдущий вопрос</p>
+							</div>
+							<div class="supportMob__footer" id="sup_foot">
+								<img src="img/mes.png" alt="">
+							<a href="#popup_bell" class="support__title border_bot popup-link_bell">Получить консультацию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>		
+	</div>
+	<div id="EndQuestMob" style="text-align: center; background: url(img/supportbg.png)no-repeat center center;background-size: cover; padding: 50px 0; display: none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>Спасибо! На основании этих ответов мы подберем для вас франшизу с подходящей концепцией</p>
+					<h1>Получите презентацию подходящей франшизы и бизнес-план со всеми финансовыми показателями для вашего города</h1>
+					<img src="img/PICmob.png" alt="">
+					<p>Выберите, куда вам прислать презентацию</p>
+					<ul class="d-flex Mobul justify-content-center" style="max-width: 100%; margin: 0 auto;">
+						<li class="menu__item__EndQuest">
+								<a href="#"><i class="fas fa-mobile-alt"></i></a>
+								<p class="border_bot cur_pon">SMS</p>
+						</li>
+	
+						<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<p class="border_bot cur_pon">WhatsApp</p>
+						</li>
+	
+						<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-viber"></i></a>
+								<p class="border_bot cur_pon">Viber</p>
+						</li>
+	
+						<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-telegram-plane"></i></a>
+								<p class="border_bot cur_pon">Telegram</p>
+						</li>
+						<!-- <li class="menu__item__EndQuest">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<p class="border_bot cur_pon">Email</p>
+						</li> -->
+					</ul>
+	
+					<form action="" class="NewForm__form">
+						<label for="input_tel">Ваш телефон</label>
+						<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+						<label for="input_name">Как к вам обращаться?</label>
+						<input type="tel" name="input_name" placeholder="Иван" required>
+						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию и бизнес-план">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+						<p class="policy ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000;">Политикой конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="EndQuest">
+		<div class="container bg">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 EndQuest__title">
+					<p>Спасибо! На основании этих ответов мы подберем для вас франшизу с подходящей концепцией</p>
+					<h1>Получите презентацию подходящей франшизы и бизнес-план со всеми финансовыми показателями для вашего города</h1>
+				</div>
+				<div class="col-lg-4 EndQuest__content">
+					<p>Выберите, куда вам прислать презентацию</p>
+					<ul class="menu" style="text-align: center;">
+							<li class="menu__item__EndQuest">
+								<a href="#"><i class="fas fa-mobile-alt"></i></a>
+								<p class="border_bot cur_pon">SMS</p>
+							</li>
+							<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-whatsapp"></i></a>
+								<p class="border_bot cur_pon">WhatsApp</p>
+							</li>
+							<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-viber"></i></a>
+								<p class="border_bot cur_pon">Viber</p>
+							</li>
+							<li class="menu__item__EndQuest">
+								<a href="#"><i class="fab fa-telegram-plane"></i></a>
+								<p class="border_bot cur_pon">Telegram</p>
+							</li>
+						</ul>
+						<div class="EndQuest__form">
+							<form action="">
+							<label for="input_email">Ваш email</label>
+							<input type="email" name="input_email" placeholder="mail@email.ru" required>
+							<label for="input_tel">Ваш телефон</label>
+							<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+							<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+							</form>
+							<p class="policy_EndQuest ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000;" class="border_bot"><br>Политикой конфиденциальности</a></p>
+							<a class="border_bot cur_pon" id="changeQuest" onclick="Clear()">Изменить ответы</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section> 
+
+	<!-- SCREEN THREE -->
+	 <section class="ScreenThree">
+		<div class="container">
+			<div class="story">
+				<div class="row">
+					<div class="col-lg-10 m-auto">
+						<div class="story_title">
+						<h1>История бизнеса, который принес 2 500 000 рублей за первые 15 дней</h1>
+						<p>и превратил небольшую команду в огромную «семью» единомышленников</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6"><img src="img/rublev.png" alt="" style="width: 100%"></div>
+					<div class="col-lg-6">
+						<div class="story_text">
+							<p>Привет! Меня зовут Станислав Рублев и я основатель Fort Family. <br><br>
+					 		Когда-то я работал аниматором, сам себе шил костюм Карлсона и радовал ребят фееричным сальто в роли капитана Джека Воробья...</p>
+					 		<p>Несколько лет работая на рынке ивент-услуг и изучив все его нюансы, я понял, что в России практически нет масштабных развлечений. И решил это исправить.</p>
+					 		<p>Так в 2015 году в Красноярске появился квест Форт Боярд. За 15 дней он принес 2 500 000 рублей чистой прибыли. </p>
+					 		<p>В 2016 году мы открыли квест в Краснодаре и повторили свой успех. </p>
+					 		<p>И увидели, что на развлечения такого уровня огромный спрос...</p>
+					 	</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 m-auto story_title">
+						<h2>Мы задумали реализовать самую невероятную франшизу на рынке, и у нас получилось!</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="story_text">
+							<p>Нам важно было не только масштабировать бизнес, но и создать сообщество людей с правильными ценностями. Которые берут ответственность за свою жизнь и достигают своих целей, помогают новым партнерам и всей сети становится лучше с каждым днем.</p>
+							<p>Мы искренне любим то дело, которым занимаемся и вкладываем в него всю свою душу. В это может быть сложно поверить. Но у нас нет ни одного партнера, кто недоволен тем, что присоединился к нам. Даже из тех, кто еще не окупил вложения. </p>
+							<p>Партнеры с лучшими показателями — помогают открываться новичкам и курируют их запуски «от и до». А сами открывают по несколько городов и запускают новые проекты. </p>
+							<p>Почитайте отзывы наших партнеров, посмотрите их истории. Почувствуйте ту сумасшедшую энергию, которая каждый день пронизывает их самих и всю нашу команду. </p>
+							<p>И вы поймете, что нам удалось создать нечто большее, чем просто франшизу.</p>
+						</div>
+					</div>
+					<div class="col-lg-5 ml-auto"><img src="img/dert.png" alt="" style="width: 100%"></div>
+				</div>
+			</div>
+		</div>
+	
+	</section> 
+
+	<!-- SCREEN FOUR -->
+	<section class="ScreenFour">
+		
+	<div class="container">
+				<div class="row">
+					<div class="col-lg-10 m-auto">
+						<h1>Бизнес-модель, которую мы упаковали во франшизу, прибыльна по двум причинам</h1>
+					</div>
+				</div>
+				<div class="picts">
+					<div class="row">
+							<div class="col-xl-2 col-4"><img src="img/pic.png" alt=""></div>
+							<div class="col-xl-4 col-8">
+								<h3>Огромный спрос</h3>
+								<p>Мы создали уникальный формат проведения любых праздников, что обеспечивает нашим партнерам постоянную загрузку площадки в любой сезон.</p>
+							</div>
+							<div class="col-xl-2 col-4"><img src="img/pic2.png" alt="" ></div>
+								<div class="col-xl-4 col-8">
+									<h3>Система неизбежного роста</h3>
+									<p>Модель уже прошла испытания, в ней выявлены и исправлены все ошибки. По сути, вы берете опыт компании и повторяете его.</p>
+								</div>
+							</div>
+				</div>
+			<!-- 	SLIDER -->
+				<div class="SliderOne">
+					<div class="row">
+						<div class="col-lg-12 m-auto">
+							<div class="main-slideshow-container">
+							<div class="slideshow-container">
+								<div class="mySlides myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/comment1.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="mySlides myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/comment2.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="mySlides myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/comment3.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+	
+								<div class="mySlides myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/comment4.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+	
+								<div class="mySlides myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/comment5.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+	
+								</div>
+								<a class="myprev" onclick="plusSlides(-1)" style="color: orange;">&#10094;</a>
+								<a class="mynext" onclick="plusSlides(1)" style="color: orange;">&#10095;</a>
+								</div>
+								<br>
+						</div>
+					</div>
+				</div>
+				<!-- SLIDER -->
+			</div>
+	
+	</section>
+
+	<!-- SCREEN FIVE -->
+	 <section class="ScreenFive">
+		<div class="container">
+					<div class="row">
+						<div class="col-lg-8 m-auto">
+							<h1>Более 80 городов уже с нами!</h1>
+						</div>
+					</div>
+				</div>
+				<div class="map"><img src="img/MAP.png" alt="" style="width: 100%"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 m-auto">
+							<h3>Посмотрите истории успеха партнеров Fort Family</h3>
+						</div>
+						<div class="col-lg-12 col-11 m-auto">
+							<div class="slickSlider">
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl1.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl2.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl3.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl4.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl1.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl2.png" style="width: 100%"></a>
+								</div>
+								<div class="slickSlider_slide">
+									<a href="video/Untitled.mp4" class="popup-youtube"><img src="img/slicksl4.png" style="width: 100%"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section> 
+	<!-- SCREEN SIX -->
+	<section class="ScreenSix">
+		<div class="container">
+					<div class="row">
+						<div class="col-lg-8 m-auto">
+							<h1 class="color_white">Сегодня наш результат можете повторить и вы, став партнером Fort Family</h1>
+						</div>
+						<div class="col-lg-10 m-auto">
+							<h4 class="color_white">Мы готовы передать вам весь опыт и помочь выйти на желаемый доход</h4>
+						</div>
+					</div>
+					<div class="form">
+						<div class="row">
+							<div class="col-lg-6 m-auto">
+								<p class="color_white form_title">Узнайте, свободен ли ваш город и получите расчеты вложений и окупаемости</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 m-auto">
+								<form action="" class="form_form">
+								<input type="tel" name="phone" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+								<input type="submit" name="" class="all_btn form13_btn" value="Получить расчет">
+								<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+								</form>
+								<p class="policy color_white">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link">Политикой конфиденциальности</a></p>
+							</div>
+						</div>
+					</div>
+		</div>
+	</section>
+	
+	<!-- SCREEN SEVEN -->
+	 <section class="ScreenSeven">
+		<div class="container">
+						<div class="row">
+							<div class="col-lg-8 m-auto">
+								<h1>Мы доказали, что человек из любого города может стать миллионером</h1>
+							</div>
+						</div>
+						<div class="title_seven">
+							<div class="row">
+								<div class="col-xl-6 col-12">
+									<h3 class="style_h3">Численность населения вашего города не имеет значения. Вы получаете продуманную бизнес-модель с высокой рентабельностью.</h3>
+								</div>
+								<div class="col-xl-2 col-3">
+									<img src="img/mapmini.png" alt="">
+								</div>
+								<div class="col-xl-4 col-9">
+									<p>Достаточно делать все по готовым инструкциям, чтобы достичь желаемых результатов по прибыли.</p>
+								</div>
+							</div>
+						</div>
+						<div class="top">
+							<div class="row">
+								<div class="col-lg-4 m-auto">
+									<div class="top_title">
+										<h1>
+											<img src="img/FrameLeft.png" alt=""> ТОП-5 <img src="img/FrameRight.png" alt="">
+										</h1>
+										<p>результатов по прибыли в месяц</p>
+									</div>
+								</div>
+							</div>
+							<div class="top_blocks">
+								<div class="row justify-content-between">
+									<div class="col-lg-2 col-12">
+										<div class="block">
+											<img src="img/FrameLeft.png" class="FrameLeft">
+											<img src="img/FrameRight.png" class="FrameRight">
+											<div class="top_circle"><h1>1</h1></div>
+											<p><i class="fas fa-map-marker-alt"></i> Новосибирск</p>
+											<p><i class="fas fa-users"></i> 1 600 000 чел.</p>
+											<p><i class="fas fa-coins"></i> <span class="strong">3 250 000 руб.</span></p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-12">
+										<div class="block">
+											<img src="img/FrameLeft.png" class="FrameLeft">
+											<img src="img/FrameRight.png" class="FrameRight">
+											<div class="top_circle"><h1>2</h1></div>
+											<p><i class="fas fa-map-marker-alt"></i> Екатеринбург</p>
+											<p><i class="fas fa-users"></i> 1 400 000 чел.</p>
+											<p><i class="fas fa-coins"></i> <span class="strong">2 500 000 руб.</span></p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-12">
+										<div class="block">
+											<img src="img/FrameLeft.png" class="FrameLeft">
+											<img src="img/FrameRight.png" class="FrameRight">
+											<div class="top_circle"><h1>3</h1></div>
+											<p><i class="fas fa-map-marker-alt"></i> Хабаровск</p>
+											<p><i class="fas fa-users"></i> 600 000 чел.</p>
+											<p><i class="fas fa-coins"></i> <span class="strong">1 800 000 руб.</span></p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-12">
+										<div class="block">
+											<img src="img/FrameLeft.png" class="FrameLeft">
+											<img src="img/FrameRight.png" class="FrameRight">
+											<div class="top_circle"><h1>4</h1></div>
+											<p><i class="fas fa-map-marker-alt"></i> Казань</p>
+											<p><i class="fas fa-users"></i> 1 200 000 чел.</p>
+											<p><i class="fas fa-coins"></i> <span class="strong">1 700 000 руб.</span></p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-12">
+										<div class="block">
+											<img src="img/FrameLeft.png" class="FrameLeft">
+											<img src="img/FrameRight.png" class="FrameRight">
+											<div class="top_circle"><h1>5</h1></div>
+											<p><i class="fas fa-map-marker-alt"></i> Томск</p>
+											<p><i class="fas fa-users"></i> 500 000 чел.</p>
+											<p><i class="fas fa-coins"></i> <span class="strong">1 700 000 руб.</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="top_btn">
+									<div class="row">
+										<div class="col-lg-4 m-auto"><a href="#" class="all_btn">Смотреть результаты партнеров</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	</section>
+	<!-- SCREEN EIGHT -->
+	 <section class="ScreenEight">
+		<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-10">
+								<h1>Помогаем не только зарабатывать, но и менять жизни людей</h1>
+							</div>
+							<div class="col-lg-5">
+								<h3 class="style_h3">Мы гордимся тем, что помогаем партнерам выходить на новый уровень, реализовывать себя и строить будущее для своей семьи.</h3>
+							</div>
+							<div class="col-lg-5">
+								<p>Каждый получает ежедневную поддержку и мотивацию. Это стимулирует двигаться к цели и строить бизнес в удовольствие.</p>
+								<p> А еще наши партнеры едины во мнении, что этот бизнес генерирует ту самую энергию жизни, которая наполняет смыслом каждое утро.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 m-auto">
+								<div class="main-slideshow-container">
+									<div class="slideshow-container">
+										<div class="mySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/comment1.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+	
+										<div class="mySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/comment2.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+	
+										<div class="mySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/comment3.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+	
+	
+										<div class="mySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/comment4.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+	
+	
+										<div class="mySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/comment5.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+									</div>
+									<a class="myprev" onclick="plusSlidesThree(-1)" style="color: orange;">&#10094;</a>
+									<a class="mynext" onclick="plusSlidesThree(1)" style="color: orange;">&#10095;</a>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+	</section>
+	<!-- SCREEN NINE -->
+	  <section class="ScreenNine">
+			<div class="container">
+							<div class="row">
+								<div class="col-lg-6 m-auto">
+									<h1>Партнеры восхищены идеей бизнеса</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-10 m-auto">
+									<p>Они не только зарабатывают миллионы, но и укрепляют семьи</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 video_cont">
+										<img src="img/video.png" alt="" style="width: 100%;">
+										<a  href="video/Untitled.mp4" class="popup-youtube circle_btn video_btn"><i class="fas fa-play"></i></a>
+								</div>
+							</div>
+							<div class="indent">
+								<div class="row justify-content-center">
+									<div class="col-lg-2"><img src="img/Frame.png" class="indent_img" alt=""></div>
+									<div class="col-lg-7"><h3 class="style_h3">«Это не бизнес — это нечто большее. Заниматься проектом можно совместно, мужу и жене, и даже ребенка никуда отдавать не надо...»</h3></div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4 m-auto">
+										<a href="#" class="all_btn">Посмотрите результаты<br>всех партнеров</a>
+									</div>
+								</div>
+							</div>
+		</section>
+	<!-- SCREEN TEN -->
+	 <section class="ScreenTen dNoneM" >
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Мы предлагаем вам на выбор 3 успешных франшизы квест-шоу</h1>
+						</div>
+					</div>
+					<div class="Ten__sliderOne grid">
+						<div class="sliderOne__left" style="height: 500px;">
+							<div class="sliderOne_content" style="margin-top: 25px;">	
+							<img src="img/LogoOne.png" alt="">
+							<p>Квест по мотивам всемирно известного теле-шоу. Практически каждый мечтал стать героем Форт Боярда! </p>
+							<p>Эта игра многим знакома с детства, что значительно расширяет круг потенциальных клиентов.</p>
+							<div class="video">
+								<p><a class="popup-youtube" href="video/Untitled.mp4">Смотреть видое</a></p>
+							</div>
+							<a href="#popup_present" class="all_btn popup-link_present" style="margin-top: 20px;">Получить презентацию</a>
+							</div>
+						</div>
+						<div class="sliderOne__right">
+									<div class="slideshow-container">
+										<div class="TriplmySlidesOne myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/0970-IMG_9834.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesOne myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDERTwo.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesOne myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDEThree.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<a class="myprev" onclick="TriplplusSlidesOne(-1)" style="color: orange;">&#10094;</a>
+										<a class="mynext" onclick="TriplplusSlidesOne(1)" style="color: orange;">&#10095;</a>
+										</div>
+										<br>
+						</div>
+					</div>
+			
+					<div class="Ten__sliderTwo gridTwo">
+						<div class="sliderTwo__left">
+							<div class="slideshow-container">
+										<div class="TriplmySlidesTwo myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDERTwo.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesTwo myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDEThree.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesTwo myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/0970-IMG_9834.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<a class="myprev" onclick="TriplplusSlidesTwo(-1)" style="color: orange;">&#10094;</a>
+										<a class="mynext" onclick="TriplplusSlidesTwo(1)" style="color: orange;">&#10095;</a>
+										</div>
+										<br>
+		
+						</div>
+						<div class="sliderTwo__right" style="max-height: 500px;">
+							<div class="sliderTow_content" style="margin-top: 25px;">
+							<img src="img/golden_fever.png" alt="">
+							<p>Квест в атмосфере Дикого запада, где участники отправляются на поиски золота.</p>
+							<p>Игра без сезонности и ограничений по возрасту. Вы сможете зарабтывать на мероприятиях круглый год.</p>
+							<div class="videoWhite">
+								<p><a class="popup-youtube" href="video/Untitled.mp4" style="color:#fff;">Смотреть видое</a></p>
+							</div>
+							<a href="#popup_present" class="all_btn popup-link_present" style="margin-top: 20px;">Получить презентацию</a>
+						</div>
+						</div>
+					</div>
+					
+					<div class="Ten__sliderThree grid">
+						<div class="sliderThree__left" style="height: 500px;">
+							<div class="sliderThree_content" style="margin-top: 25px;">
+							<img src="img/jumanji.png" alt="">
+							<p>Активный квест с приключениями по веревочным трассам, с преодолением высотных барьеров.</p>
+							<p>Все неоходимое оборудование можно установить как на открытой площадке, так и в помещенеии.</p>
+							<div class="videoWhite">
+								<p><a class="popup-youtube" href="video/Untitled.mp4" style="color:#fff;">Смотреть видое</a></p>
+							</div>
+							<a href="#popup_present" class="all_btn popup-link_present" style="margin-top: 20px;">Получить презентацию</a>
+							</div>
+						</div>
+						<div class="sliderThree__right">
+							<div class="slideshow-container">
+										<div class="TriplmySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDEThree.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/0970-IMG_9834.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<div class="TriplmySlidesThree myfade">
+										  <div class="numbertext"></div>
+										  <img src="img/SLIDERTwo.png" style="width:100%">
+										  <div class="text"></div>
+										</div>
+		
+										<a class="myprev" onclick="TriplplusSlidesThree(-1)" style="color: orange;">&#10094;</a>
+										<a class="mynext" onclick="TriplplusSlidesThree(1)" style="color: orange;">&#10095;</a>
+										</div>
+										<br>
+		
+						</div>
+					</div>
+				</div>	
+			</section> 
+	<!-- -----MOBILE VERSION ----- -->
+	<div class="ScreenTenMob dNone">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 m-auto">
+					<h1 style="text-align: center;">Мы предлагаем вам на выбор 3 успешных франшизы квест-шоу</h1>
+					<div class="TriplSlideOne">
+						<div class="TenMob__title">	
+							<img src="img/LogoOne.png" alt="">
+							<p>Квест по мотивам всемирно известного теле-шоу. Практически каждый мечтал стать героем Форт Боярда!</p><p>Эта игра многим знакома с детства, что значительно расширяет круг потенциальных клиентов.</p>
+						</div>
+						<div class="slideshow-container">
+								<div class="TriplMobmySlidesOne myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/0970-IMG_9834.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesOne myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDERTwo.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesOne myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDEThree.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+								<a class="myprev" onclick="TriplMobplusSlidesOne(-1)" style="color: orange;">&#10094;</a>
+								<a class="mynext" onclick="TriplMobplusSlidesOne(1)" style="color: orange;">&#10095;</a>
+						</div>
+						<br>
+							<div class="TenMob__footer">
+								<div class="video">
+								<p><a class="popup-youtube" href="video/Untitled.mp4">Смотреть видое</a></p>
+								</div>
+								<a href="#popup_present" class="all_btn popup-link_present" style="width: 60%;">Получить презентацию</a>
+							</div>
+						</div>
+	
+	
+						<div class="TriplSlideTwo">
+						<div class="TenMob__title color_white">	
+							<img src="img/golden_fever.png" alt="">
+							<p>Квест в атмосфере Дикого запада, где участники отправляются на поиски золота.</p><p>Игра без сезонности и ограничений по возрасту. Вы сможете зарабтывать на мероприятиях круглый год.</p>
+						</div>
+						<div class="slideshow-container">
+								<div class="TriplMobmySlidesTwo myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/0970-IMG_9834.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesTwo myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDERTwo.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesTwo myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDEThree.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+								<a class="myprev" onclick="TriplMobplusSlidesTwo(-1)" style="color: orange;">&#10094;</a>
+								<a class="mynext" onclick="TriplMobplusSlidesTwo(1)" style="color: orange;">&#10095;</a>
+						</div>
+						<br>
+							<div class="TenMob__footer">
+								<div class="videoWhite">
+								<p class="color_white"><a class="popup-youtube" href="video/Untitled.mp4" style="color:#fff;">Смотреть видое</a></p>
+								</div>
+								<a href="#popup_present" class="all_btn popup-link_present" style="width: 60%;">Получить презентацию</a>
+							</div>
+						</div>
+	
+	
+						<div class="TriplSlideThree">
+						<div class="TenMob__title color_white">	
+							<img src="img/jumanji.png" alt="">
+							<p>Активный квест с приключениями по веревочным трассам, с преодолением высотных барьеров.</p><p>Все неоходимое оборудование можно установить как на открытой площадке, так и в помещенеии.</p>
+						</div>
+						<div class="slideshow-container">
+								<div class="TriplMobmySlidesThree myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/0970-IMG_9834.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesThree myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDERTwo.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+	
+								<div class="TriplMobmySlidesThree myfade">
+								  <div class="numbertext"></div>
+								  <img src="img/SLIDEThree.png" style="width:100%">
+								  <div class="text"></div>
+								</div>
+								<a class="myprev" onclick="TriplMobplusSlidesThree(-1)" style="color: orange;">&#10094;</a>
+								<a class="mynext" onclick="TriplMobplusSlidesThree(1)" style="color: orange;">&#10095;</a>
+						</div>
+						<br>
+							<div class="TenMob__footer">
+								<div class="videoWhite">
+								<p class="color_white"><a class="popup-youtube" href="video/Untitled.mp4" style="color:#fff;">Смотреть видое</a></p>
+								</div>
+								<a href="#popup_present" class="all_btn popup-link_present" style="width: 60%;">Получить презентацию</a>
+							</div>
+						</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- SCREEN FORM -->
+
+	<section class="NewForm">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 col-2">
+					<img src="img/compass.png" alt="">
+				</div>
+				<div class="col-xl-5 col-10">
+					<div class="NewForm__title">
+						<h1>Получите презентацию всех франшиз</h1>
+						<p>со стоимостью и полными финансовыми расчетами для вашего города</p>
+						<img src="img/PICmob.png" alt="" class="dNone">
+					</div>
+				</div>
+				<div class="col-xl-4 col-12 ml-auto">
+					<div class="form13 NewForm__form dNoneM">
+						<form action="" method="POST">
+						<label for="input_city">Ваш город</label>
+						<input type="text" name="input_city" placeholder="Москва" required>
+						<label for="input_name">Ваше имя</label>
+						<input type="text" name="input_name" placeholder="Иван" required>
+						<label for="input_email">Ваш email</label>
+						<input type="email" name="input_email" placeholder="mail@email.ru" required>
+						<label for="input_tel">Ваш телефон</label>
+						<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+						</form>
+						<p class="policy ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000;">Политикой конфиденциальности</a></p>
+					</div>
+					<div class="NewForm__form dNone m-auto">
+						<form action="" method="POST">
+						<input type="text" name="input_city" placeholder="Ваш город" required>
+						<input type="text" name="input_name" placeholder="Ваше имя" required>
+						<input type="email" name="input_email" placeholder="Ваш email" required>
+						<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+						</form>
+						<p class="policy ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000;">Политикой конфиденциальности</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+ <div class="New">
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-lg-10 m-auto"><h1>Вы получите прибыльную бизнес-модель и все инструменты для открытия и управления бизнесом</h1></div>
+ 		</div>
+ 		<div class="items">
+ 			<div class="row">
+ 				<div class="col-lg-2">
+ 					<div class="item__1" onclick="currentSlideTwo(1)" style="cursor: pointer;">
+ 						<img src="img/item1.png" alt="" width="100">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2">
+ 					<div class="item__2" onclick="currentSlideTwo(2)" style="cursor: pointer;">
+ 						<img src="img/item2.png" alt=""  width="100">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2">
+ 					<div class="item__3" onclick="currentSlideTwo(3)" style="cursor: pointer;">
+ 						<img src="img/item3.png" alt=""  width="70">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2">
+ 					<div class="item__4" onclick="currentSlideTwo(4)" style="cursor: pointer;">
+ 						<img src="img/item4.png" alt=""  width="100">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2">
+ 					<div class="item__5" onclick="currentSlideTwo(5)" style="cursor: pointer;">
+ 						<img src="img/item5.png" alt=""  width="100">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 				<div class="col-lg-2">
+ 					<div class="item__6" onclick="currentSlideTwo(6)" style="cursor: pointer;">
+ 						<img src="img/item6.png" alt=""  width="80">
+ 						<p>Сайт и запуск рекламы в интернете</p>
+ 						<span class="dotTwo"></span> 
+ 					</div>
+ 				</div>
+ 			</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-lg-12 m-auto">
+ 					<div class="main-slideshow-container">
+ 					<div class="slideshow-containerTwo">
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/Сайт (2).png" style="width:100%">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/Скрипты продаж.jpg" style="width:100%; text-align: center;">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/Подбор площадки.jpg" style="width:100%">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/stuff_compos.jpg" style="width:100%">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/Брендбук.jpg" style="width:100%">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 								<div class="mySlidesTwo myfade">
+ 								  <div class="numbertext"></div>
+ 								  <img src="img/платформа-управления.jpg" style="width:100%">
+ 								  <div class="text"></div>
+ 								</div>
+ 
+ 
+ 								</div>
+ 								<a class="myprev" onclick="plusSlidesTwo(-1)" style="color: orange;">&#10094;</a>
+ 								<a class="mynext" onclick="plusSlidesTwo(1)" style="color: orange;">&#10095;</a>
+ 								</div>
+ 								<br>
+ 					<!-- SLIDER TWO -->
+ 				</div>
+ 		</div>
+ 		<div class="sliderTwo__title">
+ 		<div class="col-lg-10 m-auto">
+ 			<div id="sliderTwo__titleOne">
+ 				<h3>Собственный сайт и мощная система интернет-маркетинга</h3>
+ 				<p>У вас будет свой сайт и система сквозной аналитики рекламы. Вы сможете запустить продажи и получить предоплаты за игры еще до того, как будет готова площадка.</p>
+ 			</div>
+ 
+ 			<div id="sliderTwo__titleTwo">
+ 				<h3>Готовые скрипты переговоров и продаж для ваших менеджеров</h3>
+ 				<p>Вы получите пошаговые алгоритмы ведения переговоров с потенциальными клиентами, которые помогут вам увеличить продажи. Также с помощью продуманных скриптов вы сможете легко договориться с арендодателем помещения, необходимого для открытия квеста.</p>
+ 			</div>
+ 
+ 			<div id="sliderTwo__titleThree">
+ 				<h3>Пошаговый алгоритм действий для подбора подходящей площадки</h3>
+ 				<p>В отдельном документе мы собрали подробные инструкции по поиску площадки: как подобрать, как сэкономить на аренде, с кем договариваться и т.д. Кроме инструкций, вы также получите поддержку всей команды, мы поможем вам правильно выбрать место для квестов.</p>
+ 			</div>
+ 
+ 			<div id="sliderTwo__titleFour">
+ 				<h3>Авторское оборудование и реквизит, яркие костюмы и декорации</h3>
+ 				<p>Привезем прямо на площадку в вашем городе более 500 кг авторского оборудования, которое мы изготавливаем в собственном цехе. Поможем все установить прямо в день доставки. Обустроим территорию и покажем, как все работает.</p>
+ 			</div>
+ 
+ 			<div id="sliderTwo__titleFive">
+ 				<h3>Набор фирменных материалов для рекламы и уже готовый брендбук</h3>
+ 				<p>Наши дизайнеры уже разработали презентации, листовки, буклеты и другие фирменные материалы, которые пригодятся вам в организации рекламных кампаний. Всё соответствует тематике квестов, вглядит ярко и сразу привлекает внимание.</p>
+ 			</div>
+ 
+ 			<div id="sliderTwo__titleSix">
+ 				<h3>Подключение к CRM для удобного контроля всех показателей вашего бизнеса</h3>
+ 				<p>В CRM вы сможете отслеживать не только свои, но и некоторые показатели других партнеров франчайзинговой сети. Это поможет вам постоянно развиваться и увеличивать прибыль: с успешными франчайзи вы можете в любой момент связаться в нашем закрытом чате и задать все свои вопросы.</p>
+ 			</div>
+ 		</div>
+ 		</div>
+ 	</div>
+ </div>
+
+<!------  ---  -------->
+
+ <div class="guarantee">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="guarantee__title">
+				<h1>Мы гарантируем пожизненную поддержку для вашего постоянного роста</h1>
+				<p>В нашей большой и дружной компании к каждому относятся как к члену семьи</p>
+				</div>
+			</div>
+		</div>
+		<div class="guar__items">
+			<div class="row">
+			<div class="col-xl-4 col-12">
+				<div class="guar__items1">
+					<img src="img/1.png" alt="">
+					<h3>Кураторство личного наставника</h3>
+					<p>К каждому новому партнеру прикрепляется наставник из действующих партнеров, который не просто помогает — он отвечает перед управляющей компанией и перед другими партнерами за успех нового франчайзи.</p>
+				</div>
+			</div>
+			<div class="col-xl-4 col-12">
+				<div class="guar__items2">
+					<img src="img/2.png" alt="">
+					<h3>Поддержка всеми партнерами команды</h3>
+					<p>В общем чате партнеров вы можете получить ответ на любой вопрос за пару минут. Кроме того — вы всегда можете смело написать, позвонить или приехать абсолютно к любому партнеру Fort Family.</p>
+				</div>
+			</div>
+			<div class="col-xl-4 col-12">
+				<div class="guar__items3">
+					<img src="img/3.png" alt="">
+					<h3>Обучение во внутренней Школе маркетинга</h3>
+					<p>Проводим обучающие вебинары, предоставляем доступ к видео, лекциям и урокам для предпринимателей.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div> 
+
+ <div class="Screen13 dNoneM">
+	<div class="container">
+		<div class="row justify-content-between dNoneM">
+			<div class="col-lg-4">
+			<div class="13title">
+			<h1>Получите презентацию всех франшиз</h1>
+			<p>со стоимостью и полными финансовыми расчетами для вашего города</p>
+			</div>
+		</div>
+		<div class="col-lg-4"><img src="img/magazine_comp.png" alt=""></div>
+			<div class="col-lg-4">
+				<div class="form13">
+					<form action="">
+						<label for="input_city">Ваш город</label>
+						<input type="text" name="input_city" placeholder="Москва" required>
+						<label for="input_name">Ваше имя</label>
+						<input type="text" name="input_name" placeholder="Иван" required>
+						<label for="input_email">Ваш email</label>
+						<input type="email" name="input_email" placeholder="mail@email.ru" required>
+						<label for="input_tel">Ваш телефон</label>
+						<input type="tel" name="input_tel" class="mask-phone " placeholder="+7 (___) ___ - __ - __" required>
+						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+						<p class="policy ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000;">Политикой конфиденциальности</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ <div class="Screen13Mob dNone">
+ 	<div class="container">
+ 			<div class="row">
+ 				<div class="col-2">
+ 					<img src="img/compass.png" alt="">
+ 				</div>
+ 				<div class="col-10">
+ 					<div class="NewForm__title">
+ 						<h1>Получите презентацию всех франшиз</h1>
+ 						<p>со стоимостью и полными финансовыми расчетами для вашего города</p>
+ 						<img src="img/PICmob.png" alt="" class="dNone">
+ 					</div>
+ 				</div>
+ 				<div class="col-12 ">
+ 					<div class="NewForm__form dNone m-auto">
+ 						<form action="">
+ 						<input type="text" name="input_city" placeholder="Ваш город" required>
+ 						<input type="text" name="input_name" placeholder="Ваше имя" required>
+ 						<input type="email" name="input_email" placeholder="Ваш email" required>
+ 						<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+ 						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+ 						</form>
+ 						<p class="policy" style="padding-bottom: 0;">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000; ">Политикой конфиденциальности</a></p>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="row">
+ 				<div class="col-12" style="background: #fff;">
+ 					<img src="img/founders.png" alt="" style="width: 100%;">
+ 					<h1 style="text-align: center; padding-bottom: 30px;">Присоединяйся к самой семейной франшизе и лучшей команде в стране!</h1>
+ 				</div>	
+ 			</div>							
+ 	</div>
+ </div>
+
+
+<div class="footer">
+<div class="container">
+	<div class="row justify-content-between">
+		<div class="col-xl-3 col-12" style="text-align: center;">
+			<ul>
+				<li><a href="#"><img src="img/FrameGrey.png" alt=""></a></li>
+				<li><p class="footer_title">Франшиза площадок для проведения праздников в формате квест-шоу</p></li>
+			</ul>
+		</div>
+		<div class="col-xl-2 col-6">
+			<ul>
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#">Франшизы</a>
+				</li>
+				<li>
+					<a href="#">Кейсы</a>
+				</li>
+				<li>
+					<a href="#">Инвесторам</a>
+				</li>
+				<li>
+					<a href="#">Новости</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xl-2 col-6">
+			<ul>
+				<li><a href="#">Форт Боярд</a></li>
+				<li><a href="#">Золотая лихорадка</a></li>
+				<li><a href="#">Джуманджи</a></li>
+			</ul>
+		</div>
+		<div class="col-xl-3 col-6" style="margin-top: 40px;">
+			<ul>
+				<li><a href="#">Детский день рождения</a></li>
+				<li><a href="#">Взрослый день рождения</a></li>
+				<li><a href="#">Корпоратив</a></li>
+				<li><a href="#">Выпускной</a></li>
+				<li><a href="#">Новый год</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row dNone">
+		<div class="col-12" style="text-align: center; margin-top: 30px;">
+			<p class="phone__number">+7 (800) 555-55-55 <br><a href="#popup_bell" class="phone__title popup-link_bell">Заказать звонок</a></p>
+			<img src="img/VK.png" alt="vk">
+			<p class="border_bot policy_footer"> <a href="#popup" class="popup-link">Политика конфиденциальности</a></p>
+		</div>
+	</div>
+	<div class="row  dNone" style="padding-bottom: 30px;">
+		<div class="col-6" style="font-size: 14px; opacity: 0.4"><p>Разработка сайта</p></div>
+		<div class="col-6"><img src="img/id_logo.png" alt=""></div>
+	</div>
+	 <div class="row dNoneM" style="text-align: center;"><div class="col-lg-3 dNoneM"></div>
+		<div class="col-xl-3 col-12" style="margin-left: 50px;">
+			<div class="phone">
+			<p class="phone__number">
+			+7 (800) 555-55-55 <br><a href="#popup_bell" class="phone__title popup-link_bell">Заказать звонок</a></p>
+			</div>
+		</div>
+		<div class="col-xl-1 col-12"><img src="img/VK.png" alt="" class="vk"></div>
+	</div> 
+	 <div class="row dNoneM">
+		<div class="col-lg-8">
+			<ul class="foot">
+				<li><a href="#popup" class="popup-link" style="margin-right: 120px;">Политика конфиденциальности</a></li>
+				<li><a href="#">Разработка сайта</a></li>
+				<li><a href="#"><img src="img/id_logo.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+</div>
+
+<div id="popup_bell" class="mfp-hide popup_bell">
+	<div class="popup_bell_cont">
+	<div class="popup_bell_header">
+		<h1>Укажите контактные данные и удобное время для звонка</h1>
+		<p>Менеджер компании позвонит вам прямо сейчас или в другое рабочее время: мы работаем по будням с 10:00 до 20:00 по Москве</p>
+	</div>
+	<div class="popup_bell_form form13">
+		<form action="" class="NewForm__form">
+		<label for="input_tel">Ваш телефон</label>
+		<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+		<label for="input_name">Как к вам обращаться?</label>
+		<input type="tel" name="input_name" placeholder="Иван" required>
+		<p style="color:orange; border-bottom: 1px dashed; width: 110px; margin: 0 auto;">по времени</p>
+		<input type="text" id="datetime" placeholder="Например: 21 января в 14:00" required>
+		<input type="submit" name="" class="all_btn form13_btn" value="Перезвоните мне">
+			<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+		<p class="policy ">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <br><a href="#popup" class="popup-link" style="color: #000;">Политикой конфиденциальности</a></p>
+		</form>
+	</div>
+	</div>
+</div>
+
+<div id="popup_present" class="mfp-hide popup_present">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Получите презентацию франшизы Форт Боярд со всеми финансовыми показателями</h1>
+				<p>Вы узнаете стоимость франшизы, сроки окупаемости инвестиций и сможете рассчитать свою возможную прибыль.</p>
+			</div>	
+			<div class="col-lg-6"><img src="img/picpresent.png" style="width: 100%;"></div>
+			<div class="col-lg-6">
+				<div class="NewForm__form m-auto form13">
+ 						<form action="">
+ 						<input type="text" name="input_city" placeholder="Ваш город" required>
+ 						<input type="text" name="input_name" placeholder="Ваше имя" required>
+ 						<input type="email" name="input_email" placeholder="Ваш email" required>
+ 						<input type="tel" name="input_tel" class="mask-phone" placeholder="+7 (___) ___ - __ - __" required>
+ 						<input type="submit" name="" class="all_btn form13_btn" value="Получить презентацию">
+						<!-- <button type="submit" class="all_btn form13_btn">Получить презентацию</button> -->
+ 						</form>
+ 						<p class="policy" style="padding-bottom: 0;">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с <a href="#popup" class="popup-link" style="color: #000; ">Политикой конфиденциальности</a></p>
+ 					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="popup" class="mfp-hide popup">
+	<div class="popup_header">
+		<p>Директора ООО «Рублев Станислав Алексеевич»</p>
+		<h4>Политика защиты и обработки персональных данных</h4>
+		<p>ООО «Рублев Проект»</p>
+	</div>
+	<div class="pop_scroll">
+	<div class="popup_content">
+		<ol>
+			<li>
+				<span class="popup_content_title">Общие положения</span>
+				<ol>
+					<li class="popup_content_text">
+						
+							Настоящая Политика в отношении обработки персональных данных (далее – Политика) составлена в соответствии с пунктом 2 статьи 18.1 Федерального закона «О персональных данных» № 152-ФЗ от 27 июля 2006 г., а также иными нормативными правовыми актами Российской Федерации в области защиты и обработки персональных данных и действует в отношении всех персональных данных (далее – данные), которые Организация (далее – Оператор, Общество) может получить от субъекта персональных данных, являющегося стороной по гражданско-правовому договору, от пользователя сети Интернет (далее – Пользователь) во время использования им любого из сайтов, сервисов, служб, программ, продуктов или услуг ООО «___», а также от субъекта персональных данных, состоящего с Оператором в отношениях, регулируемых трудовым законодательством (далее – Работник).	
+					</li>
+					<li class="popup_content_text">
+						Оператор обеспечивает защиту обрабатываемых персональных данных от несанкционированного доступа и разглашения, неправомерного использования или утраты в соответствии с требованиями Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных данных».
+					</li>
+					<li class="popup_content_text">
+							Оператор вправе вносить изменения в настоящую Политику. При внесении изменений в заголовке Политики указывается дата последнего обновления редакции. Новая редакция Политики вступает в силу с момента ее размещения на сайте, если иное не предусмотрено новой редакцией Политики.
+					</li>
+				</ol>
+			</li>
+			<li>
+				<span class="popup_content_title">Термины и принятые сокращения</span>
+				<p>Персональные данные – любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных). Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники. Информационная система персональных данных (ИСПД) – совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств.</p>
+				<p>Персональные данные, сделанные общедоступными субъектом персональных данных, – персональные данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе.</p>
+				<p>Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+				<p>Уничтожение персональных данных – действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных и (или) в результате которых уничтожаются материальные носители персональных данных. Оператор – организация, самостоятельно или совместно с другими лицами организующая обработку персональных данных, а также определяющая цели обработки персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. Оператором является ______________________, расположенное по адресу: __________________.</p>
+			</li>
+			<li>
+				<span class="popup_content_title">Обработка персональных данных</span>
+				<ol>
+					<li>
+						Получение персональных данных.
+						<ol>
+							<li>
+								Все персональные данные следует получать от самого субъекта. Если персональные данные субъекта можно получить только у третьей стороны, то субъект должен быть уведомлен об этом или от него должно быть получено согласие.
+							</li>
+							<li>
+								Оператор должен сообщить субъекту о целях, предполагаемых источниках и способах получения персональных данных, характере подлежащих получению персональных данных, перечне действий с персональными данными, сроке, в течение которого действует согласие, и порядке его отзыва, а также о последствиях отказа субъекта дать письменное согласие на их получение.
+							</li>
+							<li>
+								Документы, содержащие персональные данные, создаются путем:
+								<ul>
+									<li>
+										копирования оригиналов документов (паспорт, документ об образовании, свидетельство ИНН, пенсионное свидетельство и др.);
+									</li>
+									<li>
+										несения сведений в учетные формы;
+									</li>
+									<li>
+										получения оригиналов необходимых документов (трудовая книжка, медицинское заключение, характеристика и др.).
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>
+						Обработка персональных данных. <br>
+						Обработка персональных данных осуществляется:
+						<ul>
+							<li>
+								с согласия субъекта персональных данных на обработку его персональных данных;
+							</li>
+							<li>
+								в случаях, когда обработка персональных данных необходима для осуществления и выполнения возложенных законодательством РФ функций, полномочий и обязанностей;
+							</li>
+							<li>
+								в случаях, когда осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе (далее – персональные данные, сделанные общедоступными субъектом персональных данных).
+							</li>
+
+						</ul>
+						Цели обработки персональных данных:
+						<ul>
+							<li>
+								осуществление трудовых отношений;
+							</li>
+							<li>
+								осуществление гражданско-правовых отношений;
+							</li>
+							<li>
+								для связи с пользователем, в связи с заполнением формы обратной связи на сайте, в том числе направление уведомлений, запросов и информации, касающихся использования сайта магазина, обработки, согласования заказов и их доставки, исполнения соглашений и договоров;
+							</li>
+							<li>
+								обезличивания персональных данных для получения обезличенных статистических данных, которые передаются третьему лицу для проведения исследований, выполнения работ или оказания услуг по поручению магазина.
+							</li>
+						</ul>
+						Категории субъектов персональных данных.<br>
+						Обрабатываются персональные данные следующих субъектов персональных данных:
+						<ul>
+							<li>
+								физические лица, состоящие с Обществом в трудовых отношениях;
+							</li>
+							<li>
+								физические лица, уволившиеся из Общества;
+							</li>
+							<li>
+								физические лица, являющиеся кандидатами на работу;
+							</li>
+							<li>
+								физические лица, состоящие с Обществом в гражданско-правовых отношениях;
+							</li>
+							<li>
+								физические лица, являющиеся Пользователями Сайта Магазина.
+							</li>
+							Персональные данные, обрабатываемые Оператором:
+							<ul>
+								<li>
+									данные, полученные при осуществлении трудовых отношений;
+								</li>
+								<li>
+									данные, полученные для осуществления отбора кандидатов на работу;
+								</li>
+								<li>
+									данные, полученные при осуществлении гражданско-правовых отношений;
+								</li>
+								<li>
+									данные, полученные от Пользователей Сайта Магазина.
+								</li>
+							</ul>
+							Обработка персональных данных ведется:
+							<ul>
+								<li>
+									с использованием средств автоматизации;
+								</li>
+								<li>
+									без использования средств автоматизации.
+								</li>
+							</ul>
+						</ul>
+					</li>
+					<li>
+						Хранение персональных данных.
+						<ol>
+							<li>
+								Персональные данные субъектов могут быть получены, проходить дальнейшую обработку и передаваться на хранение как на бумажных носителях, так и в электронном виде.
+							</li>
+							<li>
+								Персональные данные, зафиксированные на бумажных носителях, хранятся в запираемых шкафах либо в запираемых помещениях с ограниченным правом доступа.
+							</li>
+							<li>
+								Персональные данные субъектов, обрабатываемые с использованием средств автоматизации в разных целях, хранятся в разных папках.
+							</li>
+							<li>
+								Не допускается хранение и размещение документов, содержащих персональных данных, в открытых электронных каталогах (файлообменниках) в ИСПД.
+							</li>
+							<li>
+								Хранение персональных данных в форме, позволяющей определить субъекта персональных данных, осуществляется не дольше, чем этого требуют цели их обработки, и они подлежат уничтожению по достижении целей обработки или в случае утраты необходимости в их достижении.
+							</li>
+						</ol>
+					</li>
+					<li>
+						Уничтожение персональных данных.
+						<ol>
+							<li>
+								Уничтожение документов (носителей), содержащих персональных данных, производится путем сожжения, дробления (измельчения), химического разложения, превращения в бесформенную массу или порошок. Для уничтожения бумажных документов допускается применение шредера.
+							</li>
+							<li>
+								Персональные данные на электронных носителях уничтожаются путем стирания или форматирования носителя.
+							</li>
+							<li>
+								Факт уничтожения персональных данных подтверждается документально актом об уничтожении носителей.
+							</li>
+						</ol>
+					</li>
+					<li>
+						Передача персональных данных.
+						<ol>
+							<li>
+								Оператор передает персональные данные третьим лицам в следующих случаях:
+								<ul>
+									<li>
+										субъект выразил свое согласие на такие действия;
+									</li>
+									<li>
+										передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Перечень лиц, которым передаются персональные данные.
+								<ul>
+									<li>
+										Пенсионный фонд РФ для учета (на законных основаниях);
+									</li>
+									<li>
+										налоговые органы РФ (на законных основаниях);
+									</li>
+									<li>
+										Фонд социального страхования РФ (на законных основаниях);
+									</li>
+									<li>
+										территориальный фонд обязательного медицинского страхования (на законных основаниях);
+									</li>
+									<li>
+										страховые медицинские организации по обязательному и добровольному медицинскому страхованию (на законных основаниях);
+									</li>
+									<li>
+										банки для начисления заработной платы (на основании договора);
+									</li>
+									<li>
+										органы МВД России в случаях, установленных законодательством;
+									</li>
+									<li>
+										обезличенные персональные данные Пользователей сайта интернет-магазина передаются контрагентам Магазина.
+									</li>
+
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<span class="popup_content_title">Защита персональных данных</span>
+				<ol>
+					<li>
+						В соответствии с требованиями нормативных документов Оператором создана система защиты персональных данных (СЗПД), состоящая из подсистем правовой, организационной и технической защиты.
+					</li>
+					<li>
+						Подсистема правовой защиты представляет собой комплекс правовых, организационно-распорядительных и нормативных документов, обеспечивающих создание, функционирование и совершенствование СЗПД.
+					</li>
+					<li>
+						Подсистема организационной защиты включает в себя организацию структуры управления СЗПД, разрешительной системы, защиты информации при работе с сотрудниками, партнерами и сторонними лицами.
+					</li>
+					<li>
+						Подсистема технической защиты включает в себя комплекс технических, программных, программно-аппаратных средств, обеспечивающих защиту персональных данных.
+					</li>
+					<li>
+						Основными мерами защиты персональных данных, используемыми Оператором, являются:
+						<ol>
+							<li>
+								Назначение лица, ответственного за обработку персональных данных, которое осуществляет организацию обработки персональных данных, обучение и инструктаж, внутренний контроль за соблюдением учреждением и его работниками требований к защите персональных данных.
+							</li>
+							<li>
+								Определение актуальных угроз безопасности персональных данных при их обработке в ИСПД и разработка мер и мероприятий по защите персональных данных.
+							</li>
+							<li>
+								Разработка политики в отношении обработки персональных данных.
+							</li>
+							<li>
+								Установление правил доступа к персональных данных, обрабатываемым в ИСПД, а также обеспечение регистрации и учета всех действий, совершаемых с персональными данными в ИСПД.
+							</li>
+							<li>
+								Установление индивидуальных паролей доступа сотрудников в информационную систему в соответствии с их производственными обязанностями.
+							</li>
+							<li>
+								Применение прошедших в установленном порядке процедуру оценки соответствия средств защиты информации.
+							</li>
+							<li>
+								Сертифицированное антивирусное программное обеспечение с регулярно обновляемыми базами.
+							</li>
+							<li>
+								Соблюдение условий, обеспечивающих сохранность персональных данных и исключающих несанкционированный к ним доступ.
+							</li>
+							<li>
+								Обнаружение фактов несанкционированного доступа к персональным данным и принятие мер.
+							</li>
+							<li>
+								Восстановление персональных данных, модифицированных или уничтоженных вследствие несанкционированного доступа к ним.
+							</li>
+							<li>
+								Обучение работников Оператора, непосредственно осуществляющих обработку персональных данных, положениям законодательства РФ о персональных данных, в том числе требованиям к защите персональных данных, документам, определяющим политику Оператора в отношении обработки персональных данных, локальным актам по вопросам обработки персональных данных.
+							</li>
+							<li>
+								Осуществление внутреннего контроля и аудита.
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<span class="popup_content_title">Основные права субъекта персональных данных и обязанности Оператора</span>
+				<ol>
+					<li>
+						Основные права субъекта персональных данных. 
+						Субъект имеет право на доступ к его персональным данным и следующим сведениям:
+						<ul>
+							<li>
+								подтверждение факта обработки персональных данных Оператором;
+							</li>
+							<li>
+								правовые основания и цели обработки персональных данных;
+							</li>
+							<li>
+								цели и применяемые Оператором способы обработки персональных данных;
+							</li>
+							<li>
+								наименование и место нахождения Оператора, сведения о лицах (за исключением работников Оператора), которые имеют доступ к персональных данных или которым могут быть раскрыты персональные данные на основании договора с Оператором или на основании федерального закона;
+							</li>
+							<li>
+								сроки обработки персональных данных, в том числе сроки их хранения;
+							</li>
+							<li>
+								порядок осуществления субъектом персональных данных прав, предусмотренных Федеральным законом;
+							</li>
+							<li>
+								наименование или фамилия, имя, отчество и адрес лица, осуществляющего обработку персональных данных по поручению Оператора, если обработка поручена или будет поручена такому лицу;
+							</li>
+							<li>
+								обращение к Оператору и направление ему запросов;
+							</li>
+							<li>
+								обжалование действий или бездействия Оператора.
+							</li>
+						</ul>
+					</li>
+					<li>
+						Обязанности Оператора. 
+						Оператор обязан:
+						<ul>
+							<li>
+								при сборе персональных данных предоставить информацию об обработке персональных данных;
+							</li>
+							<li>
+								в случаях если персональные данные были получены не от субъекта персональных данных, уведомить субъекта;
+							</li>
+							<li>
+								при отказе в предоставлении персональных данных субъекту разъясняются последствия такого отказа;
+							</li>
+							<li>
+							опубликовать или иным образом обеспечить неограниченный доступ к документу, определяющему его политику в отношении обработки персональных данных, к сведениям о реализуемых требованиях к защите персональных данных;
+							</li>
+							<li>
+								принимать необходимые правовые, организационные и технические меры или обеспечивать их принятие для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;
+							</li>
+							<li>
+								давать ответы на запросы и обращения субъектов персональных данных, их представителей и уполномоченного органа по защите прав субъектов персональных данных.
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</div>
+	</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.datetimepicker.full.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/script.js"></script>
+<script>
+$('.mask-phone').mask('+7 (999) 999-99-99');
+</script>
+<!-- VIDEO -->
+<script>
+	$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		/*disableOn: 700,*/
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
+});
+</script>
+<!-- VIDEO -->
+<script>
+	$(document).ready(function() {
+		$('.popup-link').magnificPopup();
+	});
+		$(document).ready(function() {
+		$('.popup-link_bell').magnificPopup();
+	});
+		$(document).ready(function() {
+		$('.popup-link_present').magnificPopup();
+	});
+</script>
+<!-- SLIDER -->
+<script>
+	
+$('.slickSlider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
+</script>
+<script>
+	$("#datetime").datetimepicker();
+</script>
+</body>
+</html>

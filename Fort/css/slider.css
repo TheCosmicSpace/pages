@@ -1,0 +1,125 @@
+.main-slideshow-container{
+  max-width: 1150px;
+  position: relative;
+  margin: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-containerTwo {
+  max-width: 950px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.myprev, .mynext {
+ cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding-top: 20px;
+  text-align: center; 
+  margin-top: -22px;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius:50%;
+  -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.63);
+  -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.63);
+  box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.63);
+}
+
+/* Position the "next button" to the right */
+.mynext {
+  right: 0;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.myprev:hover, .mynext:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot,.dotThree  {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: orange;
+}
+.active,.dotThree:hover{
+ background-color: #717171; 
+}
+.dotTwo {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 3px solid orange;
+}
+.activeTwo, .dotTwo:focus {
+  background: url(check-solid.svg) no-repeat center;
+  background-size: cover;
+  background-color: orange;
+}
+/* Fading animation */
+.myfade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .myprev, .mynext,.text {font-size: 11px}
+}

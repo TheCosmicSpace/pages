@@ -1,0 +1,87 @@
+@media screen and (max-width: 991px) {
+	.more-content{
+		flex-direction: column;
+		text-align: center;
+	}
+	.more__img{
+		display: none;
+	}
+	.more__img-circle{
+		display: block;
+	}
+	.header-content{
+		margin-top: 30px;
+	}
+	.header-content__title h1 {
+    	font-size: 4.625rem;
+	}
+	.header-content__title p {
+    	font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	body{
+		overflow-x: hidden;
+	}
+	.sidebar{
+		display: block;
+	}
+	.header-content__btn{
+		flex-direction: column;
+    	max-width: 200px;
+	}
+	.header-content__btn button{
+		margin-top: 10px;
+	}
+	.header-content__title h1 {
+    	font-size: 3.625rem;
+	}
+	.header-content__title p {
+    	font-size: 1rem;
+	}
+	.more__title h2,
+	.cards__title h2,
+	.my-skills__title h2,
+	.portfolio__title h2,
+	.slider__title h2,
+	.main-form__title h2{
+		font-size: 2rem;
+	
+	}
+	.cards__item p{
+	font-size: 1rem;
+	}
+	.slider__content-text h3{
+	font-size: 1.5rem;
+	}
+	.inp-text{
+		flex-direction: column;
+	}
+	.inp-text input{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 575px){
+	.header-content{
+		flex-direction: column;
+	}
+	.header-content__title{
+		margin-top: 30px;
+		text-align: center;
+	}
+	.header-content__title h1{
+	font-size: 3rem;
+	}
+	.header-content__title p{
+		margin-top: 0px;
+	}
+	.header-content__btn{
+	    margin: 10px auto 15px auto;
+	}
+	.more__img-circle{
+		width: 200px;
+		height: 200px;
+	}
+}

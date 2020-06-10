@@ -1,0 +1,71 @@
+@media screen and (max-width: 991px) {
+	h1 {
+		font-size: 3rem !important;
+		line-height: 1em !important;
+	}
+	.header-content,.com{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 50px 0;
+	}
+	.header-content__title{
+		min-width: 80%;
+	}
+	.header-content__video{
+		width: 80%;
+	}
+
+}
+@media screen and (max-width: 767px){
+	.accordion-text{
+		text-align: center;
+	}
+	.accordion-text img{
+		padding-top: 20px
+	}
+	.accordion-text p {
+    	margin: 20px 5px;
+	}
+	.accordion-text img{
+		float: none;
+	}
+	.team__img,.desc__cards{
+		flex-direction: column;
+	}
+	.team__img-ellipse {
+		margin: 20px 0;
+	}
+	.com__title{
+		max-width: 80%;
+	}
+}
+@media screen and (max-width: 480px){
+	h1 {
+		font-size: 2rem !important;
+	}
+	h2{
+		font-size: 1.813rem !important;
+	}
+	h3{
+		font-size: 1.2rem !important;
+	}
+	p{
+		font-size: 0.8rem !important;	
+	}
+	.form__form,
+	.com__slider__item
+	/* .header-content__title-btn */{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 501px){
+	.header-content__title-btn button{
+		margin-right: 0 !important;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.slider__item-title{
+		min-width: 170px;
+	}
+}

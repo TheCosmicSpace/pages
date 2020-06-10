@@ -1,0 +1,257 @@
+@media screen and (max-width: 1199px) {
+	h1{
+		font-size: 40px;
+		line-height: 45px;
+	}
+	 .dNone{
+		display: block;
+	}
+	.dNoneM{
+		display: none;
+	}
+	.header{
+		width: 100%;
+	background: #FFCC00;
+	}
+	.contant{
+		text-align: center;
+	}
+	.form_btn{
+		margin-bottom: 40px;
+	}
+	.contant img{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contant__mini__title{
+		margin: 27px 0 48px 0;
+	}
+	.presaScreenTwo__title{
+		text-align: center;
+	}
+	.QuestMob{
+		padding-top: 40px;
+		background: #FFD637 url(../img/QuestMobg.png)no-repeat center center;
+		background-size: cover;
+		padding-bottom: 50px;
+	}
+
+	.changQuest_btn,#SelectCity{
+		display: block;
+		max-width: 460px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	.suppotrMob{
+		background: url(../img/AVAmb.png)no-repeat left top;
+	}
+	.suppotrMob__text{
+		padding: 20px;
+		padding-left: 15px;
+		background: #fff;
+		border-radius: 8px;
+		margin-left: 60px;
+	}
+	.suppotrMob__name {
+		margin: 20px 0 20px 60px;
+	}
+	.suppotrMob__name p{
+		margin: 0;
+	}
+	.supportMob__footer{
+		text-align: center;
+		margin-top: 40px;
+	}
+	#MobtextTwo,#MobtextThree,#MobtextFour{
+		display: none;
+	}
+	.changeQuestMobTwo,.changeQuestMobThree,.changeQuestMobFour{
+		text-align: center;
+		display: none;
+	}
+	.prevMod{
+		opacity: 0.6;
+		margin-top: 10px;
+	}
+
+
+	/*********PROGRESS BAR***********/
+
+
+.title_seven h3{
+	text-align: center;
+}
+.block{
+	margin: 0 auto;
+	max-width: 180px;
+}
+
+/*******/
+.NewForm{
+	background: #FFD030;
+	padding: 0;
+	margin: 0;
+
+}
+.NewForm__form{
+	text-align: center;
+}
+.NewForm__form input{
+	margin-top: 10px;
+	width: 100%;
+	padding: 18px 32px;
+	border-radius: 8px;
+	border: none;
+}
+.NewForm__form a{
+	width: 100%;
+}
+
+.guar__items{
+	text-align: center;
+}
+.policy_footer{
+	margin: 30px auto;	 
+	width: 260px;	
+	font-size: 16px;	
+	opacity: 0.4;	
+}
+.footer{
+	margin:0 auto;
+}
+
+/*********PROGRESS BAR***********/
+#Progress{
+	position: relative;
+	max-width: 755px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: #E7E7E7;
+	margin: 0 auto;
+}
+#Bar{
+	position: absolute;
+	height: 100%;
+	background-color: orange;
+	background-image: url(../img/moving.png);
+	border-radius: 5px;
+}
+#label{
+	padding-left:15px;
+	color: #fff;
+	text-align: left; 
+	font-weight: bold;
+	margin-top: -4px;
+
+}
+#SelectCity{
+	width: 100%;
+	padding: 25px 15px;
+}
+}
+
+@media screen and (max-width: 745px){
+	.video_btn{
+		width: 70px;
+		height: 70px;
+		font-size: 25px;
+		left: 40%;
+		top: 20%;
+		padding-top: 15px;
+		padding-left: 7px;
+	}
+}
+@media screen and (max-width: 370px){
+	h1{
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	h3{
+		line-height: 1.3;
+		font-size: 20px;
+	}
+	p{
+		font-size: 16px;
+		
+	}
+	.all_btn{
+		padding: 10px 15px;
+	}
+	.picts img{
+		width: 100%;
+	}
+	.phone{
+		width: 180px;
+	}
+	.phone p{
+		font-size: 15px;		
+	}
+	.phone a{
+		font-size: 14px;		
+	}
+	.video_btn{
+		width: 60px;
+		height: 60px;
+		font-size: 25px;
+		left: 40%;
+		top: 20%;
+		padding-top: 10px;
+		padding-left: 7px;
+	}
+	.indent_img{
+		width: 20%;	
+	}
+	.New h1{
+		text-align: center;
+	}
+	.items img{
+		
+	}
+	.guar__items img{
+		width: 50%;
+	}
+	.presaScreen_img{
+		width: 50%;
+	}
+
+	.item__2,.item__5,.item__1,.item__6{
+	margin-top: 20px;
+}
+.Mobul{
+	width: 100px;
+}
+.Mobul ul li a{
+	font-size: 14px;
+}
+/****************/
+.popup{
+	font-size: 16px;
+}
+.popup_header h4{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 22px;
+}
+.popup_header p{
+	font-size: 16px;
+}
+ol{
+	margin-left: 5px;
+	padding: 0;
+}
+
+/*************/
+.slick-prev,
+.slick-next
+{
+	width: 25px;
+	height: 25px;
+}
+.slick-prev:before,
+.slick-next:before
+{
+	font-size: 20px;
+}
+}
+
+
